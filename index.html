@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Harry Potter Trivia</Title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- BOOTSTRAP CDN  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- LINK TO STYLESHEET  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- LINK TO GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kreon" rel="stylesheet">
+     <!-- LINK TO JQUERY -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+    <img src="assets/images/jumbotron.gif" alt="Harry" class="center">
+
+    <h1>Harry Potter Quiz</h1>
+
+    <h2>You have 30 seconds to choose correctly beginning when you start the quiz.</h2>
+
+    <div id = "show-number">
+        30
+    </div>
+
+    <form id="quiz" class="quiz" name="quiz">
+
+        <!-- Question One -->
+        <p>What is the name of the Wizarding School that Harry attended?</p>
+        <input id="textbox" type="text" name="question1">
+        <br><br>
+
+        <!-- Question Two -->
+        <p>What are the names of Harry's aunt and uncle?</p>
+        <input type="radio" id="mc" name="question2" value="Lily & James">  Lily & James<br>
+        <input type="radio" id="mc" name="question2" value="Petunia & Vernon">  Petunia & Vernon<br>
+        <input type="radio" id="mc" name="question2" value="Narcissa & Lucius">  Narcissa & Lucius<br>
+        <input type="radio" id="mc" name="question2" value="Molly & Arthur">  Molly & Arthur<br>
+        <br>
+
+        <!-- Question Three -->
+        <p>________ Weasley is one of Harry's best friends. Name that Weasley.</p>
+        <input type="radio" id="mc" name="question3" value="Ron">  Ron<br>
+        <input type="radio" id="mc" name="question3" value="Bill">  Bill<br>
+        <input type="radio" id="mc" name="question3" value="Percy">  Percy<br>
+        <input type="radio" id="mc" name="question3" value="Charlie">  Charlie<br>
+        <br>
+
+        <!-- Question Four -->
+        <p>Professor McGonagal is an animagus. What animal does she change in to?</p>
+        <input type="radio" id="mc" name="question4" value="Dog">  Dog<br>
+        <input type="radio" id="mc" name="question4" value="Rat">  Rat<br>
+        <input type="radio" id="mc" name="question4" value="Crow">  Crow<br>
+        <input type="radio" id="mc" name="question4" value="Cat">  Cat<br>
+        <br>
+
+        <!-- Question Five -->
+        <p>In Harry's first year, what is the password to Dumbledore's office?</p>
+        <input type="radio" id="mc" name="question5" value="Alohamora">  Alohamora<br>
+        <input type="radio" id="mc" name="question5" value="Homenum Revelio">  Homenum Revelio<br>
+        <input type="radio" id="mc" name="question5" value="Sherbert Lemon">  Sherbert Lemon<br>
+        <input type="radio" id="mc" name="question5" value="Caput Draconis">  Caput Draconis<br>
+        <br><br>
+
+        <input id="button" type="button" value="I'm Done!" onclick="check();">
+
+
+    </form>
+
+    <div id="after_submit">
+
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="picture">
+
+    </div>
+
+   
+
+</body>
+
+
+</html>
