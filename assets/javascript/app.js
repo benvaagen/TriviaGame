@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#quiz").hide();
 
-    var $input = $('<input type="button" class = "startButton" value="Accio Quiz!" />');
+    var $input = $('<input type="button" class="startButton" value="Accio Quiz!">');
     $input.appendTo($("body"));
 
     $(".startButton").click(function () {
@@ -69,7 +69,7 @@ function check() {
         correct++;
     }
 
-    var messages = ["Piertotum Locomotor - Awesome!!", "Alohamora! - Well Done!", "Wingardium Leviosa - Alright, mate!", "Sectumsempra - A Bit Shabby, Really.", "Stupify - 1 Right? Have you been stupified?!", "Avada Kedavra - Bloody Awful."];
+    var messages = ["Piertotum Locomotor - Party!!", "Alohamora! - That's the Key!", "Wingardium Leviosa - Alright, mate!", "Sectumsempra - Bloody Shabby, Really.", "Stupify - 1 Right? Have you been stupified?!", "Avada Kedavra - Dead Wrong."];
     var pictures = ["assets/images/perfectScore.gif", "assets/images/fourRight.gif", "assets/images/threeRight.gif", "assets/images/twoRight.gif", "assets/images/oneRight.gif", "assets/images/zeroRight.gif"];
 
     var range;
